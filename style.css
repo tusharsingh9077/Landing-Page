@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20230519/pngtree-an-old-gym-setting-with-dumbbells-image_2569910.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8d210;
+}
+
+.btn-join {
+    background-color: #f8d210;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.hero-content h1 span {
+    color: #f8d210;
+}
+
+.btn-learn-more {
+    background-color: #f8d210;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.stat h3 {
+    font-size: 2.5em;
+    color: #f8d210;
+}
+
+/* Services Section */
+.services {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Trainers Section */
+.trainers {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.trainers h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.trainer-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.trainer {
+    width: 30%;
+}
+
+.trainer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trainer h3 {
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8d210;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 40px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .service-cards, .trainer-cards, .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card, .trainer, .stat {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
